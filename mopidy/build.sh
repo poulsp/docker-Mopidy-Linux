@@ -50,6 +50,8 @@ if [[  -z $image  ||  ! -z $BUILD_ARGS ]];then
   time docker build $BUILD_ARGS --force-rm --build-arg UID=$"$USERID" --build-arg GID=$"$GROUPID"  -t psp/mopidy -f Docker/Dockerfile .
 fi
 
+sleep 2
+
 if [[ $NEW_INSTANCE == "True" ]];then
   # Start mopidy
   docker-compose up -d

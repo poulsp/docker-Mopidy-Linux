@@ -8,16 +8,34 @@ Docker/host_volumes/pi.local/*
 Docker/host_volumes/cache/*
 !Docker/host_volumes/cache/.keep
 
-Docker/host_volumes/config/*
-!Docker/host_volumes/config/mopidy
+Docker/host_volumes/config/podcast/*
+!Docker/host_volumes/config/mopidy/podcast/.keep
+
 
 
 Docker/host_volumes/Music/*
 !Docker/host_volumes/Music/.keep
 
 
+
+
+data/mopidy/local/library.db
+
+Docker/host_volumes/data/mopidy/m3u/*
+!Docker/host_volumes/data/mopidy/m3u/.keep
+
+Docker/host_volumes/data/mopidy/core/*
+!Docker/host_volumes/data/mopidy/core/.keep
+
+Docker/host_volumes/data/mopidy/iris/*
+!Docker/host_volumes/data/mopidy/iris/.keep
+
+Docker/host_volumes/data/mopidy/spotify/*
+!Docker/host_volumes/data/mopidy/spotify/.keep
+
 Docker/host_volumes/transport/*
 !Docker/host_volumes/transport/.keep
+
 
 Docker/host_volumes/data/mopidy/http/*
 Docker/host_volumes/data/mopidy/local//
