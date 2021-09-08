@@ -1,3 +1,32 @@
+# Get rid of joe's bak files
+*~
+
+/gemme/*
+
+/libspotify-12.1.51-Linux-x86_64-release/*
+/libspotify-12.1.51-Linux-x86_64-release.tar.gz
+nohup.out
+/savings
+/pls.pls
+/note.txt
+
+bbc_one_hd.m3u8
+/mopidy/Docker/host_volumes/data/mopidy/m3u/[Radio Streams].m3u8"
+mopidy/Docker/host_volumes/config/mopidy/mopidy.conf-save
+mopidy/Docker/host_volumes/config/mopidy/mopidy.conf.example
+mopidy/Docker/host_volumes/config/mopidy/podcast/Podcasts.opml.save
+mopidy/Docker/host_volumes/data/mopidy/.gitignore
+mopidy/Docker/host_volumes/data/mopidy/m3u.save/
+mopidy/Docker/host_volumes/data/mopidy/m3u.simple-work/
+mopidy/Docker/host_volumes/data/mopidy/m3u.simple/
+mopidy/Docker/host_volumes/data/mopidy/m3u/BBC.m3u8.save
+mopidy/Docker/host_volumes/data/mopidy/m3u/Playlist 1, Default.m3u8
+mopidy/Docker/host_volumes/data/mopidy/m3u/Playlist 17 out of index.m3u8
+mopidy/Docker/host_volumes/data/mopidy/m3u/Playlist 2, erik.m3u8
+mopidy/Docker/host_volumes/data/mopidy/m3u/Podcast 5.m3u8
+mopidy/Docker/host_volumes/data/mopidy/m3u/[Radio Streams].m3u8
+mopidy/Docker/host_volumes/data/mopidy/m3u/podcast 1 hanson.m3u8
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

@@ -1,0 +1,37 @@
+# Kort beskrivelse, formål? hvad,hvorfor
+#
+# docker-compose run --rm mopidy bash
+# docker-compose exec mopidy bash
+# docker-compose down;docker-compose up -d; docker-compose exec mopidy bash
+#
+# docker-compose exec mopidy bash -c 'mopidy local scan'
+# docker-compose exec mopidy bash
+
+
+version: '2.2'
+#version: '3.7'
+services:
+  mopidy:
+    image:  psp/mopidy
+    container_name: mopidy
+    init: true
+    restart: unless-stopped
+    command: bash /start-scripts/start-mopidy.sh
+    env_file:
+      - ./Timezone.env
+    #environment:
+    volumes:
+      - /dev/shm:/dev/shm
+
+      - ./Docker/host_volumes/start-scripts:/start-scripts
+      - ./Docker/host_volumes/Music:/home/pi/Music
+      - ./Docker/host_volumes/config/:/home/pi/.config
+      - ./Docker/host_volumes/pi.local:/home/pi/.local
+      - ./Docker/host_volumes/cache/:/home/pi/.cache
+      - ./Docker/host_volumes/data/mopidy:/home/pi/data/mopidy
+      # - ./Docker/host_volumes/transport/:/transport
+
+    ports:
+      #- 6680 is the  web interface for mopidy
+      - "6680:6680"
+      - "6600:6600"

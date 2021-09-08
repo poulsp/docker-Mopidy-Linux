@@ -1,0 +1,51 @@
+# docker-Mopidy-Linux.
+Let Mopidy run in a docker container.
+[Mopidy](https://mopidy.com/) is an extensible music server written in Python.
+It can be build for Linux AMD64 and Rpi RaspiOS armv architecture.
+
+Used by multiroom sound system running under ProjectAlice.
+
+It's a companion app to skill MultiRomMpdManager.
+
+
+
+Read [Requirements](#Requirements), [Installing](#Installing)
+
+
+## Installing.
+set the environment in the file Timezone.env:
+   TZ=Area/Location
+   e.g. TZ=Europe/Copenhagen
+
+Be sure to build it with "bash build.sh" With "bash build.sh" you get the right UID and GID in the container and the rigth setup.
+
+
+## Requirements.
+[Docker](https://www.docker.com/) installed.
+
+- `sudo curl -fsSL get.docker.com -o get-docker.sh && sh get-docker.sh`
+
+How to set up Docker to run without using sudo all the time.
+
+ - `sudo usermod -aG docker $USER`
+
+Log out and log in again to access the docker group.
+
+Install of docker-compose:
+-  sudo apt install -y libffi-dev \
+  python3-venv python3-pip \
+  && sudo pip3 install docker-compose
+
+## TODO
+tell about podcast, built in web interface to mopidy, etc.
+
+
+
+## 📜 License.
+docker-Mopidy-Linux ships under GPLv3, it means you are free to use and redistribute the code but are not allowed to use any part of it under a closed license.
+
+
+## Disclaimer.
+I have made this repo for my self.
+This is work in progress and the code is as it is.
+Use it at your own risk/fun.
