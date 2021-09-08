@@ -2,8 +2,8 @@
 *~
 
 /config/mopidy/*
-!/config/mopidy/mopidy.conf.example
-!/config/mopidy/podcast/Podcasts.opml.example
+!/config/mopidy/.keep
+!/config/mopidy/podcast/.keep
 
 /data/mopidy/local/library.db
 
