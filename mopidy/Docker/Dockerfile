@@ -1,5 +1,6 @@
 From debian:buster-slim
 
+# What the heck, musicpd does not work on debian: bullseye AMD64, so it probably does not work on Raspberry either.
 # If you want to install "debian:bullseye-slim" on the Raspberry Pi, you need first to install libseccomp2 from debian buster backports on your host.
 #From debian:bullseye-slim
 
